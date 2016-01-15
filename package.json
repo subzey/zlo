@@ -13,8 +13,6 @@
 		"test": "mocha",
 		"groom": "jshint . && jscs .",
 		"cover": "istanbul cover node_modules/mocha/bin/_mocha && istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
-		"prepublish": "npm run groom && npm run babel && npm run mocha && npm run cover",
-		"pre-commit": "npm run groom"
 	},
 	"devDependencies": {
 		"istanbul": "^0.4.0",
