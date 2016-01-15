@@ -1,0 +1,7 @@
+test
+coverage
+.editorconfig
+.jscsrc
+.jshintrc
+.gitignore
+.npmignore

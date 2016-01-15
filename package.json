@@ -1,0 +1,26 @@
+{
+	"private": true,
+	"name": "zlo",
+	"version": "1.0.0-a.1",
+	"description": "",
+	"main": "regextag.js",
+	"license": "WTFPL",
+	"author": {
+		"name": "Anton Khlynovskiy",
+		"email": "subzey@gmail.com"
+	},
+	"scripts": {
+		"test": "mocha",
+		"groom": "jshint . && jscs .",
+		"cover": "istanbul cover node_modules/mocha/bin/_mocha && istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
+		"prepublish": "npm run groom && npm run babel && npm run mocha && npm run cover",
+		"pre-commit": "npm run groom"
+	},
+	"devDependencies": {
+		"istanbul": "^0.4.0",
+		"jscs": "^2.5.1",
+		"jshint": "^2.8.0",
+		"mocha": "^2.3.4"
+	},
+	"keywords": []
+}
